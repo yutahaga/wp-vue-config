@@ -1,6 +1,6 @@
 # wp-vue-config
 
-WordPress のための vue-config.js を簡単にセットアップできるユーティリティーです。
+WordPress のための vue.config.js を簡単にセットアップできるユーティリティーです。
 
 vue-cli に加えてこのユーティリティーを使うと、Vue.js を使わない場合にも簡単に WordPress テーマの開発環境を構築できます。
 
@@ -28,7 +28,7 @@ yarn add @yutahaga/wp-vue-config -D
 
 ### Usage
 
-#### vue-config.js
+#### vue.config.js
 
 ```javascript
 /* eslint-disable import/no-extraneous-dependencies */
@@ -42,7 +42,7 @@ module.exports = wpVueConfig({
 #### .env
 
 モジュール内部でいくつかの環境変数を使用しています。
-`vue-config.js での設定 > 環境変数 > デフォルト設定` の順で優先されます。
+`vue.config.js での設定 > 環境変数 > デフォルト設定` の順で優先されます。
 
 [vue-cli の環境ファイルについての扱いはこちら](https://cli.vuejs.org/guide/mode-and-env.html)をご覧ください。
 
@@ -68,7 +68,7 @@ WORKBOX_CACHE_ID="mytheme"
 
 ### Options
 
-vue-config.js のオプションで上書きできます。
+vue.config.js のオプションで上書きできます。
 また、下記の独自オプションで設定を簡単に切り替えることが出来ます。
 
 ```javascript
