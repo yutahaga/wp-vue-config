@@ -48,22 +48,22 @@ module.exports = wpVueConfig({
 
 ```sh
 # WordPress サイトの URL (必須)
-SITE_URL="http://example.local"
+VUE_APP_SITE_URL="http://example.local"
 
 # アセットファイルの提供元 URL (デフォルトは "http://localhost:8080")
 # 主に開発環境で使います
-ASSETS_PROVIDER_URL="http://localhost:8080"
+VUE_APP_ASSETS_PROVIDER_URL="http://localhost:8080"
 
 # アセットファイルの公開パス (必須)
-ASSETS_PUBLIC_PATH="/wp-content/themes/mytheme/assets/"
+VUE_APP_ASSETS_PUBLIC_PATH="/wp-content/themes/mytheme/assets/"
 
 # Webpack Dev Server でプロキシする WordPress のルート
 # 主に開発環境で使います。
 # "/wp/" にすると http://localhost:8080/wp/ 以下に WordPress が配置されます。
-WP_PROXY_ROUTE="/wp/"
+VUE_APP_WP_PROXY_ROUTE="/wp/"
 
 # Workbox で使うキャッシュ ID
-WORKBOX_CACHE_ID="mytheme"
+VUE_APP_WORKBOX_CACHE_ID="mytheme"
 ```
 
 ### Options
@@ -102,7 +102,7 @@ vue.config.js のオプションで上書きできます。
 
   /**
    * Webpack Dev Server でプロキシする WordPress のルート
-   * 環境変数 WP_PROXY_ROUTE を上書きします
+   * 環境変数 VUE_APP_WP_PROXY_ROUTE を上書きします
    *
    * default: /wp/
    */
