@@ -17,6 +17,7 @@ vue-cli に加えてこのユーティリティーを使うと、Vue.js を使�
 * 不要なプラグインなどの除去
 * Sass / SCSS ファイル内での glob インポート
 * アセットパスの変数を Sass / SCSS へ提供
+* Sass 内で Tailwind CSS の `config` 関数を使用した数値・色の計算を行える機能
 
 ## Getting Started
 
