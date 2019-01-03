@@ -1,6 +1,6 @@
 {
   "name": "@yutahaga/wp-vue-config",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "vue.config.js for WordPress",
   "files": [
     "lib"
